@@ -1,0 +1,27 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "Photo APP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zekiunyildiz/PCAT-Node.git"
+  },
+  "keywords": [
+    "Photo",
+    "app",
+    "camera"
+  ],
+  "author": "Zeki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zekiunyildiz/PCAT-Node/issues"
+  },
+  "homepage": "https://github.com/zekiunyildiz/PCAT-Node#readme",
+  "devDependencies": {
+    "prettier": "2.4.1"
+  }
+}
