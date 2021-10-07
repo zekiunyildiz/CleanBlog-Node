@@ -4,10 +4,15 @@ const ejs = require('ejs');
 
 const app = express();
 
-// !Template
+// !Template Engine
 app.set('view engine', 'ejs');
 
+
+//! Middlewares
 app.use(express.static('public'));
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
+
 
 app.get('/', (req, res) => {
   //res.sendFile(path.resolve(__dirname, 'temp/index.html'))
@@ -23,6 +28,12 @@ app.get('/about', (req, res) => {
 app.get('/add', (req, res) => {
 
   res.render('add');
+});
+
+app.post('/photos', (req, res) => {
+
+  console.log(req.body);
+  res.redirect('/')
 });
 
 

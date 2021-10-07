@@ -48,5 +48,5 @@ Photo.findByIdAndUpdate(
 const id = '615e24f128bad4d11fbf0905';
 
 Photo.findByIdAndDelete(id, (err,data)=>{
-    console.log('Photo is removed...');
+    console.log('Photo is removed... ');
 })
