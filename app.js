@@ -12,7 +12,7 @@ const pageController = require('./controllers/pageController');
 const app = express();
 
 //!Connect DB
-mongoose.connect('mongodb://localhost/clean-blog', {
+mongoose.connect('mongodb+srv://zeki36:Nisa_1997@pcat-app.2bgzx.mongodb.net/pcat-app?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -44,7 +44,7 @@ app.get('/add', pageController.getAddPage);
 
 app.get('/photos/edit/:id', pageController.getEditPage);
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Sunucu ${port} portunda başlatıldı..`);
 });
